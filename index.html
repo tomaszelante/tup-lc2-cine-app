@@ -6,12 +6,13 @@
     <title>TUP LC2 - TP Integrador - Cine</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/index.css">
 </head>
 <body>
     <header>
         <h1>
         <!--Titulo Cabecera-->
-            <span>Cartelera de Cine</span>
+            <span><img src="../tup-lc2-cine-app/img/IconoCine.png" alt="CinemaApp"> Cartelera de Cine</span>
         </h1>
         <nav>
         <!--Menu Superior-->
@@ -27,24 +28,64 @@
         <h2>Ultimas Peliculas En Cartelera</h2>
         <section id="form-movie-new">
             <form action="../favorities.html" method="get" target="_self">
-                <input type="text" placeholder="" name="" id="" size="10">
+                <input type="text" placeholder="Inserte codigo" name="cod" id="codigo" size="15">
                 <button class="boton">Agregar a favoritos</button><br/><br/>
             </form>
         </section>
         <section id="sec-messages">
         <!--Seccion para mensajes-->
+        <div class="mensaje warning">La Pelicula ingresada ya se encuentra almacenada</div>
+        <div class="mensaje success">Pelicula agregada con exito</div>
+        <div class="mensaje error">Error: La pelicula seleccionada no se encuentra en la API 
+        o se produjo un error al consultar</div>
         </section>
-        <section id=" sec_peliculas ">
+        <section id="sec_peliculas">
             <!-- seccion para visualizacion de peliculas-->
             <div class="contenedorPeliculas" id="contenedorPeliculas">
-                <img src="../tup-lc2-cine-app/img/creed.jpg" alt="CreedIII">
-                <h3>Creed III</h3>
-                <p>
-                    <b>Codigo:</b> 677179<br/>
-                    <b>Titulo original:</b> Creed III<br/>
-                    <b>Idioma original:</b> EN<br/>
-                    <b>Año:</b> 2023-03-01<br/>
-                </p>
+                <div class="item">
+                    <img src="img/mario.jpg" alt="SuperMarioBros">
+                    <h3>Super Mario Bros. La pelicula</h3>
+                    <p>
+                        <b>Codigo:</b> 502356<br/>
+                        <b>Titulo original:</b> The Super Mario Bros. Movie<br/>
+                        <b>Idioma original:</b> EN<br/>
+                        <b>Año:</b> 2023-04-05<br/>
+                    </p>
+                    <button class="button">Agregar a Favoritos</button>
+                </div>
+                <div class="item">
+                    <img src="img/shazam.jpg" alt="Shazam2">
+                    <h3>Shazam! La Furia de los Dioses</h3>
+                    <p>
+                        <b>Codigo:</b> 594767<br/>
+                        <b>Titulo original:</b> Shazam! Fury of the Gods<br/>
+                        <b>Idioma original:</b> EN<br/>
+                        <b>Año:</b> 2023-03-15<br/>
+                    </p>
+                    <button class="button">Agregar a Favoritos</button>
+                </div>
+                <div class="item">
+                    <img src="img/laniña.jpg" alt="LaNiñaDeLaComunion">
+                    <h3>La Niña de la Comunion</h3>
+                    <p>
+                        <b>Codigo:</b> 1008005<br/>
+                        <b>Titulo original:</b> La Niña de la Comunion<br/>
+                        <b>Idioma original:</b> EN<br/>
+                        <b>Año:</b> 2023-02-10<br/>
+                    </p>
+                    <button class="button">Agregar a Favoritos</button>
+                </div>
+                <div class="item">
+                    <img src="img/gatobota.jpg" alt="GatoConBotas">
+                    <h3>Gato con Botas: El Ultimo Deseo</h3>
+                    <p>
+                        <b>Codigo:</b> 315162<br/>
+                        <b>Titulo original:</b> Puss in Boots: The Last Wish<br/>
+                        <b>Idioma original:</b> EN<br/>
+                        <b>Año:</b> 2022-12-07<br/>
+                    </p>
+                    <button class="button">Agregar a Favoritos</button>
+                </div>
             </div>
         </section>
         <section id="sec_paginador_peliculas">

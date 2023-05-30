@@ -6,12 +6,13 @@
     <title>TUP LC2 - TP Integrador - Cine</title>
     <!-- Estilos CSS -->
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/pages/help.css">
 </head>
 <body>
     <header>
         <h1>
         <!--Titulo Cabecera-->
-            <span>Cartelera de Cine</span>
+            <span><img src="../tup-lc2-cine-app/img/IconoCine.png" alt="CinemaApp">Cartelera de Cine</span>
         </h1>
         <nav>
         <!--Menu Superior-->
@@ -43,12 +44,17 @@
                 <label for="email"><b>Email:</b></label><br/>
                 <input type="email" name="email" id="email" placeholder="Ingrese su Email">
                 <br/>
-                <label for="area_texto"><b>Mensaje:</b></label><br/>
-                <textarea name="area_texto" id="area_texto" rows="6" cols="70"></textarea>
+                <label for="mensaje"><b>Mensaje:</b></label><br/>
+                <textarea name="area_texto" id="mensaje" placeholder="indique su Sugerencia" rows="6" cols="70"></textarea>
                 <br/><br/>
-                <button class="boton">Limpiar</button>
-                <input class="boton" type="submit" value="Enviar">
+                <div class="boton-container">
+                    <button class="boton">Limpiar</button>
+                    <button class="boton">Enviar</button>
+                </div>
             </form>
+        </section>
+        <section id="sec-messages">
+            <div class="MailInvalido">Ingrese un Email valido</div>
         </section>
     </main>
     <footer>

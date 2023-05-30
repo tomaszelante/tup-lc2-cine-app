@@ -14,9 +14,11 @@
     --color-back-inactive: #c4c6c9;
     --color-titulos: #E83845;
     --color-texto-blanco: #FFF;
-    --color-gradient: linear-gradient(to right,
-            var(--color-theme),
-            var(--color-back-active));
+    --color-gradient: linear-gradient(
+      to right,
+      var(--color-theme),
+      var(--color-back-active)
+    );
 }
 
 body {
@@ -40,12 +42,12 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: url('../img/FondoCine6.jpg');
+    background-image: url('../img/FondoCine6.webp');
     border-radius: 0 0% 20px 20px;
-    border-bottom: 2px solid var(--color-active);
+    border-bottom: 2px solid var(--color-active); 
 }
 
-nav>ul {
+nav > ul {
     display: flex;
     justify-content: space-between;
     justify-content: center;
@@ -63,6 +65,10 @@ nav li a {
     font-size: 1em;
     font-weight: bold;
     color: var(--color-texto-blanco);
+    background-color: var(--color-back-inactive);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-right: 3px;
 }
 
 nav li.current-page a {
@@ -86,6 +92,14 @@ h1 {
     color: var(--color-theme);
 }
 
+span img{
+    width: 40px;
+}
+
+h1 span{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
 h1>img {
     width: 70px;
     vertical-align: middle;
@@ -93,6 +107,7 @@ h1>img {
 }
 
 h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     color: var(--color-titulos);
     margin: 16px 0;
     text-align: center;
@@ -127,11 +142,6 @@ main p {
     margin-bottom: 16px;
 }
 
-.boton {
-    background-color: rgb(45, 80, 80);
-    border-radius: 5px;
-    color: white;
-}
 
 /* Media Query: Estilos a aplicar sólo en pantallas mayores a 400px */
 @media (min-width: 400px) {

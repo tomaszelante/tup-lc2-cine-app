@@ -1,0 +1,50 @@
+.boton-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+#form #name{
+    display: flex;
+    padding: 10px;
+    width: 550px;
+    text-align: center;
+}
+#form #email{
+    display: flex;
+    padding: 10px;
+    width: 550px;
+    text-align: center;
+}
+#form #mensaje{
+    display: flex;
+    padding: 40px;
+    width: 550px;
+    text-align: center;
+}
+.boton{
+    color: #fff;
+    background-color: rgb(63, 106, 107);
+    width: 70px;
+    font-weight: 500;
+    padding: 8px;
+    border-style: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.MailInvalido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-top: 70px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #e0e0e0;
+    border-width: 2px;
+    border-radius: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #dc3545;
+}

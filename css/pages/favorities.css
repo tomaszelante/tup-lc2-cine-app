@@ -1,0 +1,31 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedorPeliculasFavoritas {
+    display: grid;
+    display: flex;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    max-width: 1000px;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+
+.contenedorPeliculasFavoritas img {
+    width: 70%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.item h3 {
+    text-shadow: 2px 2px 3px rgba(3, 3, 3, 0.8);
+}
+
+.contenedorPeliculasFavoritas p {
+    color: cadetblue;
+    font-size: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
